@@ -41,3 +41,36 @@ function changeSlide() {
     }
     slides[index].classList.add("active");
 }
+
+function resetTimer(){
+    clearInterval(timer);
+    timer = setInterval(autoplay, 3000);
+}
+
+function autoplay(){
+    nextSlide();
+}
+
+let timer = setInterval(autoplay, 3000);
+
+
+// Scroll color
+
+if(window.screen.width > 750) {
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+
+      document.getElementById("navbar").style.background = "#262626";
+   
+    } else {
+
+      document.getElementById("navbar").style.background = "transparent";
+   
+    }
+  }
+
+}
+
+
