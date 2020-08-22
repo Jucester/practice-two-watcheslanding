@@ -73,4 +73,31 @@ if(window.screen.width > 750) {
 
 }
 
+// Responsive menu 
+
+const open = document.querySelector('.open');
+const close = document.querySelector('.close');
+const menu = document.querySelector('.menu');
+
+open.addEventListener('click', function() {
+    responsiveMenu();
+})
+
+close.addEventListener('click', function() {
+    responsiveMenu();
+    
+})
+
+function responsiveMenu() {
+    if (menu.style.right === "-100%") {
+        menu.style.right = "0px"
+        open.style.display = 'none'
+        close.style.display = 'block'
+    } else {
+        menu.style.right = "-100%"
+        close.style.display = 'none'
+        open.style.display = "block"
+    }
+}
+
 
