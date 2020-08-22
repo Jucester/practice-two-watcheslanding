@@ -422,7 +422,7 @@ ul {
         background: #f2f2f2;
     
         .image {
-            width: 712px;
+            width: 412px;
             height: auto;
 
             img {
@@ -434,7 +434,7 @@ ul {
         .textos {
             width: 50%;
             padding: 0 40px;
-            margin: auto;
+            margin: 0 auto;
             p {
                 font-size: 20px;
             }
@@ -445,10 +445,7 @@ ul {
 
 }
 
-
-
 /* Footer */
-
 
 footer {
     background: #303030;
@@ -537,7 +534,7 @@ footer {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            max-width: 400px;
+            max-width: 300px;
            
             .contact-footer{
                 background: #252525;
@@ -545,7 +542,7 @@ footer {
                 margin-bottom: 10px;
                 line-height: 20px;
                 padding: 10px 20px;
-                width: 400px;
+                width: 300px;
                 border: none;
              
             }
@@ -555,7 +552,7 @@ footer {
                 height: 150px;
                 max-height: 150px;
                 width: 100%;
-                max-width: 400px;
+                max-width: 300px;
 
             }
            }
@@ -580,8 +577,7 @@ footer {
 }
 
 
-@media screen and (max-width: 800px) {
-
+@media screen and (max-width: 1000px) {
     .navbar {
      
         .menu {
@@ -619,6 +615,48 @@ footer {
         }
     }
 
+    .people {
+        height: auto;
+    
+    }
+
+    footer {
+      
+        .footer-content {
+
+            .icon {
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+     
+            .categories {
+                ul {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .form {
+                form {
+                    max-width: 250px;
+
+                    .contact-footer {
+                    
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+
     .hero {
         .slide {
             .container-slide {
@@ -640,7 +678,7 @@ footer {
     }
 
     .people {
-        height: 650px;
+       
         .textos {
             
             p {
@@ -674,15 +712,123 @@ footer {
 
     footer {
         height: 1100px;
+
         .footer-content {
             height: 1100px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            
+            .icon {
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+     
+            .categories {
+                ul {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .form {
+                form {
+                    max-width: 350px;
+
+                    .contact-footer {
+                    
+                        width: 350px;
+                    }
+
+                    textarea {
+                        max-width: 350px;
+                    }
+                }
+            }
+
+
+
         }
 
-        .footer-bottom {
+    
+    }
+ 
+}
 
+
+@media screen and (max-width: 500px) {
+    .hero {
+        .container-slide {
+            flex-direction: column-reverse;
+            flex-grow: 0;
         }
     }
+
+    .people {
+   
+        .textos {
+            
+            p {
+                margin-top: 10px;
+                font-size: 14px;
+            }
+        }
+        
+    }
+
+
+    .cards {
+        .card {
+            width: 85%;
+            height: 250px;
+        }
+    }
+
+    footer {
+      
+           .footer-content {
+                .icon {
+                    img {
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    .socials {
+                        a {
+                            
+                            width: 30px;
+                            height: 30px;
+                            padding: 5px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            
+
+                .categories {
+                    ul {
+                        a {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .form {
+                    margin: 0;
+                    form {
+                    
+                        max-width: 150px;
+
+                        .contact-footer {
+                    
+                            width: 150px;
+                        }
+                    }
+                }
+           }
+    }
+
 }

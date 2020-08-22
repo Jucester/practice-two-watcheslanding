@@ -354,7 +354,7 @@ ul {
   background: #f2f2f2;
 }
 .says .say .image {
-  width: 712px;
+  width: 412px;
   height: auto;
 }
 .says .say .image img {
@@ -364,7 +364,7 @@ ul {
 .says .say .textos {
   width: 50%;
   padding: 0 40px;
-  margin: auto;
+  margin: 0 auto;
 }
 .says .say .textos p {
   font-size: 20px;
@@ -444,7 +444,7 @@ footer .footer-content .form form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 400px;
+  max-width: 300px;
 }
 footer .footer-content .form form .contact-footer {
   background: #252525;
@@ -452,7 +452,7 @@ footer .footer-content .form form .contact-footer {
   margin-bottom: 10px;
   line-height: 20px;
   padding: 10px 20px;
-  width: 400px;
+  width: 300px;
   border: none;
 }
 footer .footer-content .form form textarea {
@@ -460,7 +460,7 @@ footer .footer-content .form form textarea {
   height: 150px;
   max-height: 150px;
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
 }
 footer .footer-bottom {
   background: #252525;
@@ -473,7 +473,7 @@ footer .footer-bottom {
   padding-top: 15px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .navbar .menu {
     position: fixed;
     width: 100%;
@@ -504,6 +504,25 @@ footer .footer-bottom {
     display: none;
   }
 
+  .people {
+    height: auto;
+  }
+
+  footer .footer-content .icon img {
+    width: 200px;
+    height: 200px;
+  }
+  footer .footer-content .categories ul a {
+    font-size: 14px;
+  }
+  footer .footer-content .form form {
+    max-width: 250px;
+  }
+  footer .footer-content .form form .contact-footer {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 800px) {
   .hero .slide .container-slide .caption h1 {
     font-size: 40px;
   }
@@ -514,9 +533,6 @@ footer .footer-bottom {
     width: 150px;
   }
 
-  .people {
-    height: 650px;
-  }
   .people .textos p {
     margin-top: 20px;
     font-size: 16px;
@@ -546,6 +562,61 @@ footer .footer-bottom {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  footer .footer-content .icon img {
+    width: 250px;
+    height: 250px;
+  }
+  footer .footer-content .categories ul a {
+    font-size: 16px;
+  }
+  footer .footer-content .form form {
+    max-width: 350px;
+  }
+  footer .footer-content .form form .contact-footer {
+    width: 350px;
+  }
+  footer .footer-content .form form textarea {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero .container-slide {
+    flex-direction: column-reverse;
+    flex-grow: 0;
+  }
+
+  .people .textos p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .cards .card {
+    width: 85%;
+    height: 250px;
+  }
+
+  footer .footer-content .icon img {
+    width: 150px;
+    height: 150px;
+  }
+  footer .footer-content .icon .socials a {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  footer .footer-content .categories ul a {
+    font-size: 14px;
+  }
+  footer .footer-content .form {
+    margin: 0;
+  }
+  footer .footer-content .form form {
+    max-width: 150px;
+  }
+  footer .footer-content .form form .contact-footer {
+    width: 150px;
   }
 }
 
