@@ -398,7 +398,7 @@ ul {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 600px;
+    height: auto;
 
     .textos {
         color: rgb(255, 255, 255);
@@ -615,10 +615,6 @@ footer {
         }
     }
 
-    .people {
-        height: auto;
-    
-    }
 
     footer {
       
@@ -675,18 +671,6 @@ footer {
                 }
             }
         }
-    }
-
-    .people {
-       
-        .textos {
-            
-            p {
-                margin-top: 20px;
-                font-size: 16px;
-            }
-        }
-        
     }
 
     .cards {
@@ -761,24 +745,44 @@ footer {
 
 @media screen and (max-width: 500px) {
     .hero {
-        .container-slide {
-            flex-direction: column-reverse;
-            flex-grow: 0;
+       
+        .slide{
+            .container-slide {
+                .caption {
+                    h1 {
+                        font-size: 20px;
+                    }
+    
+                    p {
+                        font-size: 10px;
+                    }
+                }
+    
+                .img {
+                    width: 100px;
+                }
+            }
         }
     }
+    
 
+    .about {
+
+        .parrafo {
+            font-size: 16px;
+        }
+    }
     .people {
    
         .textos {
             
             p {
                 margin-top: 10px;
-                font-size: 14px;
+                font-size: 16px;
             }
         }
         
     }
-
 
     .cards {
         .card {

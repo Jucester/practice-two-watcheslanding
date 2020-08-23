@@ -335,7 +335,7 @@ ul {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 600px;
+  height: auto;
 }
 .people .textos {
   color: white;
@@ -504,10 +504,6 @@ footer .footer-bottom {
     display: none;
   }
 
-  .people {
-    height: auto;
-  }
-
   footer .footer-content .icon img {
     width: 200px;
     height: 200px;
@@ -531,11 +527,6 @@ footer .footer-bottom {
   }
   .hero .slide .container-slide .img {
     width: 150px;
-  }
-
-  .people .textos p {
-    margin-top: 20px;
-    font-size: 16px;
   }
 
   .cards .card {
@@ -581,14 +572,23 @@ footer .footer-bottom {
   }
 }
 @media screen and (max-width: 500px) {
-  .hero .container-slide {
-    flex-direction: column-reverse;
-    flex-grow: 0;
+  .hero .slide .container-slide .caption h1 {
+    font-size: 20px;
+  }
+  .hero .slide .container-slide .caption p {
+    font-size: 10px;
+  }
+  .hero .slide .container-slide .img {
+    width: 100px;
+  }
+
+  .about .parrafo {
+    font-size: 16px;
   }
 
   .people .textos p {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .cards .card {
